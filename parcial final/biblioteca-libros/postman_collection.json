@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Biblioteca - Libros",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST crear libro",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Cien anos de soledad\",\n  \"autor\": \"Gabriel Garcia Marquez\",\n  \"precio\": 59900\n}"
+        },
+        "url": { "raw": "http://localhost:8080/api/libros", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "libros"] }
+      }
+    },
+    {
+      "name": "GET listar libros",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:8080/api/libros", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "libros"] }
+      }
+    }
+  ]
+}
