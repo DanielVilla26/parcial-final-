@@ -1,6 +1,6 @@
 # API de libros
 
-Correr: `mvn spring-boot:run` (o Run a LibrosApplication en el IDE)
+Para correrlo con :) `mvn spring-boot:run` 
 
 - POST http://localhost:8080/api/libros
 - GET  http://localhost:8080/api/libros
